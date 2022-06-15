@@ -1,0 +1,89 @@
+What is method:
+is block of code , a group of java statements.. it defines the behavior of a class.
+Why we use it:
+it help us to remove duplicate code from our application. we just create a method
+and every time we need that logic we just call the method that contains the logic.
+it also allows to write the code in the form of modules which makes the development
+of large applications easier.
+How to use methods:
+1. we create a method inside a class
+2. we create the object of the class
+3. we call the methods by writing the name of the object a dot name of a method.
+example: class Calculator{
+Rules to create and use methods:
+void add(int x, int y){
+System.out.println(x+y) // we will need main method to able to execute it.
+public static void main(String[]args){
+
+Calculator calculator= new Calculator(
+calculator.add(10,20); //30
+void ==> void is a return type and it is a must if you want to return a specific data write
+the same of that data type like for int we write int for String
+we write String and if we don't want to return anything we write void
+when we write a void we can't assign a method call toa variable.
+
+add==> we write the name of the method which can be anything it should follow the
+rules for giving a name to a name to a variable.
+
+()==> we specify the parameters here we can pass any data type inside these parenthesis.
+They are optional. we can leave them empty.
+
+add(int x, int y)==> this part with the name of the method and its parameters is called
+signature of a method.
+void add(int x,int y)==>header of the methods.
+
+Body of the method:
+{
+System.out.println();
+
+}
+the body of teh method that contains the java statement
+=======================================================================
+type of Variables in Java:
+there are three type variables in java.
+1. Local variable:
+ if a variable is inside a method or a part of its parameters or a loop
+oor switch statement it is called a local variable.They are accessible only in the {}
+2. Instance variable:
+ if a variable is inside the class but outside of any block of code like method loop
+switch statement if else condition it is called an instance variable.
+3. Static Variables:
+ if an instance variable has a static keyword with it than it is called static variable.
+ String name; // instance variable
+     static int num5; // static
+
+     void printName(){
+         String name="Local"; // Local variable
+         System.out.println(name);
+         WHY LEARN ABOUT DIFFERENT TYPES OF VARIABLES?
+     1.IT HELPS US REDUCE THE AMOUNT OF "RAM"THAT OUR APPLICATIONS WILL BE USING WHEN IT WILL BE RUNNING.
+     2. WITH THE HELP OF THESE VARIABLES WE CAN PASS THE INFORMATION BETWEEN METHODS OF CLASS.
+     3.LOCAL VARIABLES OCCUPY THE MEMORY OR THE SHORTEST PERIOD OF TIME AS SOON AS YOUR METHOD
+     IS DONE EXECUTING THEY ARE DESTROYED BY A SPECIAL PROGRAM CALLED GARBAGE COLLECTOR.
+
+How to use these:
+    Local: create inside block of code
+
+Advantages vs disadvantages
+
+Local variables:
+Advantages:
+    They occupy the memory for the shortest period of time. Always try to use local
+    variables when possible to save memory.
+Disadvantages:
+    They are very limited in scope means we can't access them outside of method or that block
+    of code.
+
+Instance variables:
+Advantages:
+    They have broader scope as compared to local variables, means we can access in all the methods
+    of that class.
+Disadvantages:
+    They occupy the space in your RAM for longer periods of time.
+
+static Variables:
+Advantages:
+    We can call static variables without creating an object of a class.
+    We can share a single variable between all the objects of a class
+
+
