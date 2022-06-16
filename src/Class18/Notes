@@ -1,0 +1,46 @@
+What is a constructors in Java:
+    A constructor is a special block of code that helps us give initial values to the fields
+    of a class. initialization of object or instance.
+Why we should use a constructor.
+    1) When we use the contractor to initialize the object it looks more readable and cleaner.
+    2) If the fields of a class are private it's not possible to access them outside of a class without
+    constructor or a method which means we can't initialize them without a method or a constructors.
+    3) We can enforce rules like what kind of values are assigned to variables with the help of a constructor.
+    4) If we want to make sure that some lines of code should always be executed when the object of a class
+     is created we can put that ode inside the constructor.
+How to use constructor.
+    We create constructor inside the class and when an object of that class is created the constructor
+    is executed automatically.
+ Example: class Car{
+ String make;
+ String model;
+
+ Car (String carMake, String carModel){
+ make=carMake;
+ model=carModel;
+
+ }
+ public static void main (String [] args){
+ Car bmw=new Car("BMW", "m4");
+
+ }
+ }
+
+Rules:
+    1) Constructors don't have return types not even void.
+    2) The name of the constructor should always be same as name of the class.
+    3) Constructors can't be created with a static keyword.
+    4) We can use an access modifiers with Constructors.
+    5) If we don't create a constructor in a class default constructor with zero parameters is
+    created by compiler (takes the code written by us, and it converts that code to byte code which is easier
+    for Java to understand)
+    6) it is not allowed to have two constructor in a class with same number of parameters and same type
+
+    THIS KEYWORD:
+    We can use "this." keyword to access the instance variables when you have same name variables and your method
+    or constructor or any block of code.
+    this():
+    calls the constructor of a class inside other constructor.
+    why we use it --> it help us reuse already written constructors contains same code
+    why we want to create multiple constructor in the first place--> we want to give end user flexibility that he
+    can create the objects of our class in may different ways
