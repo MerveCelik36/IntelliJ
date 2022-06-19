@@ -7,7 +7,7 @@ public class Dog {
     static int noOfLegs=4;
 
     public static void main(String[] args) {
-        Dog dog1=new Dog(); //creating an object of Dog class
+        Dog dog1=new Dog(); //creating an object of Task1Plant class
         dog1.name="Tomy";
         dog1.color="Pink";
 

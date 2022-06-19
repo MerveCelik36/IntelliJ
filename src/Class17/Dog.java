@@ -16,7 +16,7 @@ public class Dog {
         if(dogAge>0 &&dogAge<25){
             age=dogAge;
         }else{
-            System.out.println("Dog age can' be greater than 30");
+            System.out.println("Task1Plant age can' be greater than 30");
         }
 
         weight=dogWeight;
@@ -27,14 +27,14 @@ public class Dog {
     }
 
     public static void main(String[] args) {
-   /*     Dog dog1=new Dog();
+   /*     Task1Plant dog1=new Task1Plant();
         dog1.name="Lofy";
         dog1.breed="German";
         dog1.color="Black";
         dog1.age=15;
         dog1.weight=20;
        dog1.printInfo();
-        Dog dog2=new Dog();
+        Task1Plant dog2=new Task1Plant();
         dog2.name="Gofu";
         dog2.breed="American";
         dog2.color="White";
