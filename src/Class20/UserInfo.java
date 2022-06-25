@@ -4,7 +4,7 @@ public class UserInfo extends UserClass{
     String address;
     UserInfo(String name, long phoneNumber, String address) {
         super(name, phoneNumber);
-        this.address=address;
+        this.address=address;// this cannot come before super();line!!
     }
     void UserDetails(){
         System.out.println(name+" "+phoneNumber+" "+ address);
